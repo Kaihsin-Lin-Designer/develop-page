@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 18px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+        * {
+            font-family: "Poppins", serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #e2e2e2;
+        }
+        body {
+            background-image: linear-gradient(#141517 80%, #37373b 100%);
+        }
+        section {
+            height: 100lvh;
+            padding: 1rem;
+            position: relative;
+        }
+        hgroup {
+            --y-position: calc(50lvh - 70%);
+            margin: auto;
+            max-width: 1920px;
+            transform: translate(0, var(--y-position));
+        }
+        .text-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .img-container {
+            max-width: 500px;
+            width: 80lvw;
+            margin: auto;
+        }
+        .img-container>img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+        .dis {
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+        }
+        .dis>h2, .dis>p {
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <hgroup>
+                <div class="img-container">
+                    <img src="./picture/working.svg" alt="Underdevelopment">
+                </div>                
+                <h1 class="text-center">The Site is Underdevelopment<br/>網站開發中</h1>
+                <p class="text-center">
+                    This website is still under development, please visit again in the future
+                </p>
+                <p class="text-center">
+                    這個網站還在開發階段，請日後再訪
+                </p>
+            </hgroup>
+            <div class="dis">
+                <h2>Developer Email: </h2>
+                <p>kaihsin.lin.id@gmail.com</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
