@@ -3,8 +3,11 @@ const switchDevEmail = (email) => {
         document.querySelector("#dev-email-div").remove();
         return;
     }
-    const domElement = document.querySelector("#dev-email");
-    domElement.innerText = email;
+    const emailTitleEl = document.querySelector("#dev-email-title");
+    const emailEl = document.querySelector("#dev-email");
+
+    emailTitleEl.innerText = "Developer Email:";
+    emailEl.innerText = email;
     return;
 }
 
