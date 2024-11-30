@@ -19,10 +19,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: #e2e2e2;
+            color: #202020;
         }
         body {
-            background-image: linear-gradient(#141517 80%, #37373b 100%);
+            background-color: #f9f9f9;
+            /* background-image: linear-gradient(#141517 80%, #37373b 100%); */
         }
         section {
             height: 100lvh;
@@ -45,12 +46,12 @@
         .img-container {
             max-width: 500px;
             width: 80lvw;
-            margin: auto;
+            margin: 4rem auto;
         }
         .img-container>img {
             width: 100%;
-            aspect-ratio: 4/3;
             object-fit: cover;
+            transform: translate(-4%, 0);
         }
         #dev-email-div {
             position: fixed;
@@ -73,14 +74,18 @@
         <section>
             <hgroup>
                 <div class="img-container">
-                    <img src="./picture/working.svg" alt="Underdevelopment">
+                    <img id="img" src="./picture/working.svg" alt="Developing">
                 </div>                
-                <h1 class="text-center">The Site is Underdevelopment<br/>網站開發中</h1>
+                <h1 class="text-center">
+                    <span class="site-name-en">This website</span> is Underdevelopment
+                    <br/>
+                    <span class="site-name-zh">網站</span>開發中
+                </h1>
                 <p class="text-center">
-                    This website is still under development, please visit again in the future
+                    <span class="site-name-en">This website</span> is still under development, please visit again in the future
                 </p>
                 <p class="text-center">
-                    這個網站還在開發階段，請日後再訪
+                    <span class="site-name-zh">網站</span>還在開發階段，請日後再訪
                 </p>
             </hgroup>
             <div id="dev-email-div">
