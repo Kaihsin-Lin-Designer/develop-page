@@ -38,4 +38,4 @@ const switchPicture = (imgSrc, imgAlt) => {
 
 switchDevEmail("kaihsin.lin.id@gmail.com");
 switchSiteName("NCKU Badminton Official Website", "成大羽球隊官網");
-switchPicture("/picture/ncku-badminton-logo-1.svg", "NCKU Badminton Logo")
+switchPicture("/picture/ncku-badminton-logo-1.svg", "NCKU Badminton Logo");
