@@ -33,9 +33,15 @@ const switchSiteName = (siteNameEn, siteNameZh) => {
 }
 
 const switchPicture = (imgSrc, imgAlt) => {
-    const imgEl = document.querySelector("#img");
+    // const imgEl = document.querySelector("#img");
+    const imgContainerEl = document.querySelector("#img-container");
+    const imgEl = document.createElement("img");
+
+    imgEl.setAttribute("id", "img");
     imgEl.setAttribute("src", imgSrc);
     imgEl.setAttribute("alt", imgAlt);
+
+    imgContainerEl.appendChild(imgEl);
     return;
 }
 
